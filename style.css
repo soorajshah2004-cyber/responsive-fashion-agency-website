@@ -1,0 +1,691 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.circle {
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle:hover {
+  background-color: rgba(24, 23, 22, 0.7725490196);
+}
+
+.anchor {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.link:hover .circle {
+  background-color: rgba(24, 23, 22, 0.7725490196);
+  box-shadow: 0 0 10px #dac5a7;
+  transition: transform 0.3s ease;
+  transform: rotate(45deg);
+}
+
+svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  color: white;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: clamp(2.75rem, 6.5vw, 6rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: clamp(1.8rem, 3vw, 2rem);
+  text-transform: uppercase;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6rem;
+  cursor: pointer;
+}
+button .btn-arrow {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+button:hover .btn-arrow {
+  transition: transform 0.3s ease;
+  transform: rotate(45deg);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+nav svg {
+  color: black;
+}
+nav .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  height: 1.2rem;
+}
+nav .menu .line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  width: 1.5rem;
+}
+
+main {
+  padding-inline: 1.5rem;
+  width: 100%;
+}
+main .fashionhero-section {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .fashionhero-section h5 {
+  font-weight: 400;
+}
+main .fashionhero-section .about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: 0.8;
+}
+main .unleashing-brand-section {
+  padding-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+main .unleashing-brand-section .image {
+  width: 100%;
+}
+main .unleashing-brand-section .text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+}
+main .unleashing-brand-section .text .text-top {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .unleashing-brand-section .text .text-top h1 {
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+main .unleashing-brand-section .text .text-top p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+main .unleashing-brand-section .text .text-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main .unleashing-brand-section .text .text-bottom .content {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  text-transform: uppercase;
+}
+main .unleashing-brand-section .text .text-bottom .lineBorder {
+  height: 1px;
+  width: 100%;
+  background-color: gray;
+  opacity: 0.5;
+}
+main .tailored-Brand-section {
+  width: 100%;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .tailored-Brand-section .image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex-shrink: 0;
+}
+main .tailored-Brand-section .text-vertical {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+main .tailored-Brand-section .text-vertical span {
+  writing-mode: vertical-rl;
+  margin-top: 0.5rem;
+}
+main .tailored-Brand-section .text-vertical .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+main .tailored-Brand-section .text-vertical .text p {
+  font-size: 1.2rem;
+}
+main .ourServices-section {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main .ourServices-section .textPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .ourServices-section .textPart .services {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  gap: 2rem;
+}
+main .ourServices-section .textPart .services .service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .ourServices-section .textPart .services .service hr {
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+main .ourServices-section .textPart .services .service h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+main .ourServices-section .textPart .services .service p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.6;
+  font-weight: 400;
+  line-height: 1.5;
+}
+main .selected-work-section {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .selected-work-section .block {
+  display: none;
+}
+main .selected-work-section .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main .selected-work-section .cards .project-reverse {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .selected-work-section .cards .project {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .selected-work-section .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .selected-work-section .cards .card h2 {
+  padding-bottom: 1rem;
+}
+main .selected-work-section .cards .card p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+main .clients-section {
+  padding-top: 4rem;
+}
+main .clients-section .blank {
+  display: none;
+}
+main .clients-section .right .image {
+  width: 100%;
+}
+main .clients-section .right .client-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+main .clients-section .right .client-cards .client-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .clients-section .right .client-cards .client-card .leftside {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .clients-section .right .client-cards .client-card span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+main .team-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-block: 4rem;
+}
+main .team-section p {
+  font-family: monospace;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+main .team-section .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .team-section .teamcards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .team-section .teamcards .teamcard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .team-section .teamcards .teamcard p {
+  opacity: 0.6;
+}
+main .team-section .teamcards .teamcard span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+main .team-section .teamcards .teamcard .team-roles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .team-section .teamcards .teamcard .team-roles .team-socials {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+main .team-section .join-team {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .team-section .join-team span {
+  font-size: 0.8rem;
+}
+main .team-section .join-team .text h2 {
+  font-size: clamp(3rem, 9vw, 8rem);
+}
+main .team-section .join-team .full {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .team-section .join-team .full h2 {
+  font-size: clamp(2.25em, 5vw, 4rem);
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  padding-inline: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 4rem;
+}
+footer h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+footer span {
+  font-size: 0.9rem;
+}
+footer .footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-top h2 {
+  font-size: clamp(2.25rem, 5vw, 4rem);
+  text-align: center;
+}
+footer .footer-middle {
+  background-color: #111;
+  padding-top: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer .footer-middle .erikk {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: start;
+}
+footer .footer-middle .erikk .socials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .footer-middle .erikk .socials .social {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+footer .footer-middle .erikk .socials .social img,
+footer .footer-middle .erikk .socials .social svg {
+  color: white;
+}
+footer .footer-middle .erikk .socials .social .circle {
+  background-color: white;
+  border-color: #111;
+}
+footer .footer-middle .pages {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: start;
+}
+footer .footer-middle .cms {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: start;
+}
+footer .footer-middle .utility-pages {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+footer .footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+footer .footer-bottom p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  opacity: 0.5;
+}
+footer .footer-bottom .to-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+footer .footer-bottom .to-top .circle {
+  background-color: white;
+}
+footer .footer-bottom .to-top .circle :hover {
+  cursor: pointer;
+}
+
+@media (min-width: 720px) {
+  main {
+    padding-inline: 3rem;
+  }
+  main .fashionhero-section {
+    padding-top: 2.5rem;
+  }
+  main .ourServices-section .textPart .services {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1rem;
+  }
+  main .selected-work-section .cards .project-reverse {
+    flex-direction: row-reverse;
+  }
+  main .selected-work-section .cards .project {
+    flex-direction: row;
+  }
+  main .selected-work-section .cards .card {
+    width: 50%;
+  }
+  main .selected-work-section .cards .image {
+    width: 50%;
+  }
+  main .selected-work-section .cards .image-block .block {
+    display: none;
+  }
+  main .clients-section .right .client-cards .client-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .clients-section .right .client-cards .client-card .leftside {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+  main .team-section .teamcards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    padding-inline: 2rem;
+  }
+  footer .footer-top {
+    padding-block: 4rem;
+  }
+  footer .footer-middle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 2rem;
+  }
+  footer .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
+}
+@media (min-width: 1020px) {
+  nav {
+    padding: 2rem 4rem 0 4rem;
+  }
+  main {
+    padding-inline: 4rem;
+  }
+  main .fashionhero-section {
+    padding-top: 3rem;
+  }
+  main .unleashing-brand-section {
+    flex-direction: row-reverse;
+    padding-top: 3rem;
+    gap: 3rem;
+  }
+  main .unleashing-brand-section img {
+    height: -webkit-fill-available;
+    height: -moz-available;
+    height: stretch;
+  }
+  main .unleashing-brand-section .text {
+    gap: 4rem;
+    padding: 2rem 0;
+  }
+  main .unleashing-brand-section .text .text-top p {
+    font-size: 1.5rem;
+  }
+  main .tailored-Brand-section {
+    padding-top: 3rem;
+    gap: 3rem;
+    flex-direction: row;
+  }
+  main .tailored-Brand-section .image {
+    width: 30%;
+  }
+  main .tailored-Brand-section .text-vertical {
+    flex-direction: row-reverse;
+    width: 70%;
+    gap: 3rem;
+  }
+  main .tailored-Brand-section .text-vertical .text {
+    padding: 2rem 0;
+  }
+  main .tailored-Brand-section .text-vertical .text p {
+    font-size: 1.5rem;
+  }
+  main .ourServices-section {
+    display: flex;
+    flex-direction: row;
+  }
+  main .ourServices-section .textPart {
+    width: 50%;
+    padding: 2rem 0;
+  }
+  main .ourServices-section .textPart .services {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 3rem;
+  }
+  main .ourServices-section .image {
+    width: 50%;
+  }
+  main .selected-work-section .cards .image-block .block {
+    display: block;
+  }
+  main .clients-section {
+    display: flex;
+    flex-direction: row;
+  }
+  main .clients-section .blank {
+    display: block;
+    width: 35%;
+  }
+  main .clients-section .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 65%;
+  }
+  main .clients-section .right .image-gap {
+    display: flex;
+    justify-content: end;
+  }
+  main .clients-section .right .image {
+    display: flex;
+    text-align: end;
+    width: 50%;
+  }
+  main .clients-section .right .client-cards {
+    padding-top: 4rem;
+    gap: 2rem;
+  }
+  main .team-section .text {
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+  }
+  main .team-section .text h2 {
+    width: 50%;
+  }
+  main .team-section .text p {
+    width: 50%;
+  }
+  main .team-section .teamcards {
+    display: flex;
+    flex-direction: row;
+  }
+  main .team-section .join-team {
+    display: flex;
+    flex-direction: row;
+  }
+  main .team-section .join-team .blank {
+    width: 50%;
+  }
+  main .team-section .join-team .full {
+    width: 50%;
+  }
+  footer {
+    padding-inline: 4rem;
+  }
+  footer .footer-top {
+    padding-block: 8rem;
+  }
+  footer .footer-middle {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 4rem;
+  }
+  footer .footer-middle .erikk {
+    justify-content: space-between;
+  }
+  footer .footer-bottom {
+    padding: 3rem 0;
+  }
+}/*# sourceMappingURL=style.css.map */
