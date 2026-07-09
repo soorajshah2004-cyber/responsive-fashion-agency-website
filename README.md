@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a fully responsive fashion agency landing page built using HTML and CSS. It is based on a reference design and focuses on creating a clean, modern, and responsive user interface across desktop, tablet, and mobile devices.
+This project is a fully responsive fashion agency landing page implemented from a reference design using HTML and CSS.. It is based on a reference design and focuses on creating a clean, modern, and responsive user interface across desktop, tablet, and mobile devices.
 
 The goal of this project was to strengthen my understanding of responsive web development, Flexbox, CSS Grid, and modern layout techniques.
 
