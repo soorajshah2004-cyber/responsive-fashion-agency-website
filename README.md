@@ -46,15 +46,18 @@ Works across:
 
 ### Desktop
 
-(Add desktop screenshot here)
+<img width="1366" height="768" alt="DesktopView" src="https://github.com/user-attachments/assets/563f79df-96e4-4738-9065-58b9dc76da11" />
+
 
 ### Tablet
 
-(Add tablet screenshot here)
+<img width="1366" height="768" alt="TabletView" src="https://github.com/user-attachments/assets/164cc0b6-c282-434d-b2c5-14c9cb30aaf9" />
+
 
 ### Mobile
 
-(Add mobile screenshot here)
+<img width="1366" height="768" alt="mobileView" src="https://github.com/user-attachments/assets/bd6c23ca-ea6c-4652-90bd-6a047a8799f5" />
+
 
 ---
 
