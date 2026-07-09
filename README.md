@@ -2,23 +2,23 @@
 
 ## Overview
 
-This project is a fully responsive fashion agency landing page implemented from a reference design using HTML and CSS.. It is based on a reference design and focuses on creating a clean, modern, and responsive user interface across desktop, tablet, and mobile devices.
+This project is a fully responsive fashion agency landing page implemented from a reference design using HTML and CSS. The focus was on building a clean, modern user interface while ensuring a seamless experience across desktop, tablet, and mobile devices.
 
-The goal of this project was to strengthen my understanding of responsive web development, Flexbox, CSS Grid, and modern layout techniques.
+The project helped me strengthen my understanding of responsive web development, CSS Flexbox, CSS Grid, media queries, and modern layout techniques.
 
 ---
 
 ## Features
 
-- Fully Responsive Design
-- Mobile-First Layout
-- CSS Flexbox
-- CSS Grid
-- Modern UI Design
-- Responsive Navigation
+- Fully Responsive Layout
+- Desktop, Tablet & Mobile Support
+- Modern Fashion Agency Landing Page
+- CSS Flexbox Layout
+- CSS Grid Layout
+- Media Queries
 - Optimized Images
-- Smooth Layout Structure
-- Clean and Organized Code
+- Clean & Semantic HTML
+- Organized CSS Structure
 
 ---
 
@@ -26,6 +26,7 @@ The goal of this project was to strengthen my understanding of responsive web de
 
 - HTML5
 - CSS3
+- SCSS
 - Flexbox
 - CSS Grid
 - Media Queries
@@ -63,22 +64,22 @@ Works across:
 
 ## Live Demo
 
-Live Website:
-(Add Netlify Link)
+🔗 https://responsive-fashion-agency-website.netlify.app/
 
 ---
 
 ## What I Learned
 
-Through this project I improved my understanding of:
+During this project I improved my understanding of:
 
-- Building responsive layouts
+- Creating fully responsive layouts
+- CSS Flexbox
 - CSS Grid
-- Flexbox
 - Media Queries
+- Responsive typography
 - Image optimization
 - Layout structuring
-- Writing cleaner HTML & CSS
+- Writing clean and maintainable HTML & CSS
 
 ---
 
@@ -89,6 +90,7 @@ Through this project I improved my understanding of:
 - Improve page performance
 - Add dark/light theme
 - Convert the project to React
+- Add JavaScript interactivity
 
 ---
 
@@ -98,3 +100,6 @@ Through this project I improved my understanding of:
 
 GitHub:
 https://github.com/soorajshah2004-cyber
+
+LinkedIn:
+https://www.linkedin.com/in/suraj-shah-3b6219315 
